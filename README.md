@@ -2,7 +2,7 @@
 
 Reactor enables you to do something similar to Phoenix framework LiveView using Django Channels.
 
-![TODO MVC demo app](demo.gif)
+![TODO MVC demo app](docs/source/imgs/demo.gif)
 
 ## What's in the box?
 
@@ -18,7 +18,7 @@ Install reactor:
 pip install django-reactor
 ```
 
-Reactor makes use of `django-channels`, by default this one uses an InMemory channel layer which is not capable of a real broadcasting, so you might wanna use the Redis one, take a look here: [Channel Layers](https://channels.readthedocs.io/en/latest/topics/channel_layers.html)
+Reactor makes use of [`django-channels`](https://channels.readthedocs.io/en/stable/), by default this one uses an InMemory channel layer which is not capable of a real broadcasting, so you might wanna use the Redis one, take a look here: [Channel Layers](https://channels.readthedocs.io/en/latest/topics/channel_layers.html)
 
 Add `reactor` and `channels` to your `INSTALLED_APPS` before the Django applications so channels can override the `runserver` command.
 
